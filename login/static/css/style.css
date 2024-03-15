@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*   font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gridlayout{
+    width: 95%;
+    margin: auto;
+}
+.headercontent{
+    padding: 5px 0px;
+}
+.headercontent,.headerul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+.headercontent h1{
+    color: #17ACE8;
+}
+.headerul{
+    list-style-type: none;
+    gap:100px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.headerul a{
+    text-decoration: none;
+    color: #5217E8;
+}
+.headerul a:hover{
+    color: #17ACE8;
+}
+.headercontent button,.herocontent button{
+    padding: 9px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5217E8;
+    color: white;
+}
+.herocontent button{
+    margin: 45px auto;
+}
+.headercontent button:hover,.herocontent button:hover{
+    background-color: #17ACE8;
+}
+.herocontent h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 55px;
+    padding: 20px 0px;
+}
+.herocontent p{
+    font-family: "Lora", serif;
+    color: white;
+    font-size: 18px;
+    width: 59%;
+    margin: auto;
+    padding: 30px 0px;
+    line-height: 1.6;
+}
+#herosection{
+    background: url(../images/herobg.jpg);
+    height: 640px;
+    background-size: cover;
+}
+.herocontent{
+    text-align: center;
+    padding: 105px 0px;
+}
+.collectionshead  h1{
+    font-family: "Poppins", sans-serif;
+    color: #1744E8;
+    text-align: center;
+    font-size: 45px;
+}
+.collectionshead p{
+    font-family: "Lora", serif;
+    color: #17ACE8;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    font-weight: 600;
+    margin: auto;
+    padding: 10px;
+}
+#collectionsection{
+    margin: 60px auto;
+}
+.collectionspan1 span,.collectionspan2 span{
+    padding: 8px;
+    background-color: rgb(228, 227, 227);
+    margin: 0px 15px;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+}
+.collectionspan1,.collectionspan2{
+    width: fit-content;
+    margin: 30px auto 0px;
+}
+.imagesdiv img{
+    height: 300px;
+    width: 400px;
+}
+.imagesdiv img:hover{
+    opacity: 0.5;
+}
+.imagesdiv{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: auto;
+    width: fit-content;
+    margin: 65px auto;
+    grid-gap: 37px;
+}
+input{
+    width: 252px;
+    padding: 25px 4px 7px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #4669EC;
+}
+.signupdiv,.logindiv{
+    width: 22%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 31px 0px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.signupdiv i,.logindiv i{
+    position: absolute;
+    right: 46px;
+    top: 24px;
+    font-size: 14px;
+}
+.signupdiv img,.logindiv img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+.signupdiv form div,.logindiv form div{
+    position: relative;
+    margin: 10px 0px;
+    background-color: white;
+}
+.signupdiv h1,.logindiv h1{
+    font-size: 28px;
+    padding: 10px 0px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+.signupdiv form,.logindiv form{
+    background-color: white;
+}
+.signupdiv button,.logindiv button,.backbtn{
+    padding: 9px 20px;
+    background-color: #1744e8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    margin: 25px 0px 0px;
+}
+.backbtn{
+    margin: 25px;
+}
+.signupdiv button:hover,.logindiv button:hover,.backbtn:hover{
+    background-color: #5217E8;
+    border: none;
+}
+form p{
+    font-family: "Lora", serif;
+    font-size: 13px;
+    margin: 19px 0px;
+}
+form a{
+    text-decoration: none;
+    color: #1744e8;
+}
+form a:hover{
+    color: #17ACE8;
+}
+#footersection{
+    background-color: #1744E8;
+}
+.footercontent{
+    text-align: center;
+    padding: 30px 0px;
+}
+.footercontent i{
+    color: #17ACE8;
+    font-size: 35px;
+    margin: 10px 15px;
+}
+.footercontent i:hover{
+    color: white;
+}
+.footercontent p{
+    color: white;
+    font-size: 23px;
+    padding: 10px 0px;
+    font-family: "Poppins", sans-serif;
+}
+#footersection h6{
+    text-align: center;
+    color: white;
+    padding: 8px 0px;
+    font-size: 18px;
+    font-family: "Lora", serif;
+}

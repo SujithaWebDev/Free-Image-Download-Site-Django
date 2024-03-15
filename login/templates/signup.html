@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FreeImage - Signup | Unlock Creative Potential: Explore a Bounty of Free Images on Our Download Website! Elevate Your Projects with High-Quality Visuals, Perfect for Websites, Presentations, and Social Media. Dive Into a Diverse Collection of Royalty-Free Images Covering Every Theme and Subject Imaginable. Fuel Your Creativity Without Cost—Download Now and Transform Your Content with our Stunning Visuals!</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link rel="shortcut icon" href="{% static 'images/herobg.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section>
+            <a href='\'><button class="backbtn">Back to Home</button></a>
+            <div class="signupdiv">
+                <img src="{% static 'images/signupicon.png' %}" alt="...">
+                <h1>Create Account!</h1>
+                <!-- code for error -->
+                {% if error %}
+                <h1>{{ error }}</h1>
+                {% endif %}
+
+                <form method="post">
+                    {% csrf_token %} <!-- middleware -->
+                    <div>
+                        <input type="text" name="username"
+                        placeholder="Enter your Username"><i class="fa fa-user"
+                        aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <input type="email" name="email"
+                        placeholder="Enter your Email"><i class="fa fa-envelope"
+                        aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <input type="password" name="password"
+                        placeholder="Enter your Password"><i
+                        class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
+                    <button type="submit">Signup</button>
+                    <p>Alraedy have an Account? <a href="/login">Login</a></p>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
