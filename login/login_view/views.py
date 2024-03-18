@@ -2,13 +2,13 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login as auth_login, logout as auth_logout
 # Create your views here.
-def home(request):
+def index(request):
     # userdetails=[
     #     {"name":"Sujitha", "age":23},
     #     {"name":"Harry", "age":13},
     #     {"name":"Potter", "age":20}
     # ]
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 def signup(request):
     if request.method == 'POST':
@@ -21,7 +21,7 @@ def signup(request):
             return render(request,"signup.html",{'error':'Username already exists'})
         saving = User.objects.create_user(username = username, email = email, password = password)
         auth_login(request,saving)
-        return redirect('home')
+        return redirect('index')
     return render(request,'signup.html')
 
 def login(request):
@@ -31,7 +31,7 @@ def login(request):
         user=authenticate(request,username=username,password=password)
         if user is not None:
             auth_login(request,user)
-            return redirect('home')
+            return redirect('index')
         else:
             return render(request,'login.html',{'error':'Invalid credentials'})
     return render(request,'login.html')
