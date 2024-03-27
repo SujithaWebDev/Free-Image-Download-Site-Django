@@ -219,3 +219,65 @@ form a:hover{
     font-size: 18px;
     font-family: "Lora", serif;
 }
+
+@media screen and (max-width:500px) {
+    .herocontent {
+        padding: 25px 0px;
+    }
+    .herocontent p {
+        font-size: 13px;
+    }
+    .headercontent{
+        display: block;
+    }
+    .headerul {
+        gap: 24px;
+        font-size: 18px;
+    }
+    .collectionshead p {
+        width: 88%;
+    }
+    .collectionspan1 span, .collectionspan2 span {
+        padding: 1px;
+        font-size: 7px;
+        margin: 0px 2px;
+    }
+    .collectionspan1, .collectionspan2 {
+        margin: 13px auto 0px;
+    }
+    .imagesdiv {
+        display: block;
+        width: min-content;
+    }
+    .imagesdiv img {
+        height: 210px;
+        width: 310px;
+    }
+    .signupdiv, .logindiv {
+        width: 83%;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px) {
+    .headerul {
+        gap: 68px;
+        font-size: 18px;
+    }
+    .collectionspan1 span, .collectionspan2 span {
+        padding: 6px;
+        font-size: 11px;
+        margin: 0px 8px;
+    }
+    .imagesdiv {
+        display: grid;
+        grid-template-columns: repeat(2, 362px);
+    }
+    .imagesdiv img {
+        height: 260px;
+        width: 360px;
+    }
+    .signupdiv, .logindiv {
+        width: 41%;
+    }
+}
+
